@@ -34,3 +34,8 @@ document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 document.querySelectorAll('[data-year]').forEach((item) => {
   item.textContent = new Date().getFullYear();
 });
+
+const footerTagline = document.querySelector('.footer-bottom p:last-child');
+if (footerTagline) {
+  footerTagline.textContent = 'Profesional · Berintegritas · Handal · Terpercaya';
+}
